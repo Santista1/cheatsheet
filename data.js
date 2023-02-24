@@ -5,7 +5,6 @@ const data =
   [
 
     [
-
       [
         [ <p> Html </p>, <p> English </p> ],
         [ <p> Basic </p> ],
@@ -13,10 +12,11 @@ const data =
         [ "<p> Text </p>", <p> Text </p> ],
         [ "<a> Link </a>", <a href="#"> Link </a> ],
         [ "<button> Button </button>", <button className="button"> Button </button> ],
-        [ "<img src='kiwi.jpg'>", <img src="kiwi.jpg"/> ],
         [ "<input type='text'>", <input type="text"/> ],
+        [ "<h1> Title </h1>", <h1> Title </h1> ],
+        [ "<ul> <li> Item </li> </ul>", <ul> <li> Item </li> </ul> ],
+        [ "<img src='kiwi.jpg'>", <img src="kiwi.jpg"/> ],
       ],
-
       [
         [ <p> Html </p>, <p> English </p>],
         [ <p> Text </p>],
@@ -33,31 +33,39 @@ const data =
         [ "<h3> Title </h3>", <h3> Title </h3> ],
         [ "<h2> Title </h2>", <h2> Title </h2> ],
         [ "<h1> Title </h1>", <h1> Title </h1> ],
-        [ "<strong> Important </strong>", <strong> Important </strong> ],
+        [ "<p> line <br/> breaks </p>", <p> line <br/> breaks </p> ],
       ],
-
       [
         [ <p> Html </p>, <p> English </p> ],
         [ <p> Listas </p> ],
         [ <b> Code </b>, <b> Appearance </b> ],
       ],
-
     ],
 
     [
-
       [
         [ <p> Css </p>, <p> English </p> ],
-         [<p> Basic </p> ],
+        [<p> Basic </p> ],
         [ <b> Code </b>, <b> Appearance </b> ],
       ],
-
       [
         [ <p> Css </p>, <p> English </p> ],
         [ <p> Text </p> ],
         [ <b> Code </b>, <b> Appearance </b> ],
       ],
+    ],
 
+    [
+      [
+        [ <p> JavaScript </p>, <p> English </p> ],
+        [<p> Basic </p> ],
+        [ <b> Code </b>, <b> Appearance </b> ],
+      ],
+      [
+        [ <p> JavaScript </p>, <p> English </p> ],
+        [ <p> Text </p> ],
+        [ <b> Code </b>, <b> Appearance </b> ],
+      ],
     ],
 
   ],
@@ -65,7 +73,6 @@ const data =
   [
 
     [
-
       [
         [ <p> Html </p>, <p> Español </p> ],
         [ <p> Basico </p> ],
@@ -73,10 +80,11 @@ const data =
         [ "<p> Texto </p>", <p> Texto </p> ],
         [ "<a> Enlace </a>", <a href="#"> Enlace </a> ],
         [ "<button> Boton </button>",<button className="button"> Boton </button> ],
-        [ "<img src='kiwi.jpg'>", <img src="kiwi.jpg"/> ],
         [ "<input type='text'>", <input type="text"/> ],
+        [ "<h1> Titulo </h1>", <h1> Titulo </h1> ],
+        [ "<ul> <li> Item </li> </ul>", <ul> <li> Item </li> </ul> ],
+        [ "<img src='kiwi.jpg'>", <img src="kiwi.jpg"/> ],
       ],
-
       [
         [ <p> Html </p>, <p> Español </p> ],
         [ <p> Texto </p> ],
@@ -93,31 +101,39 @@ const data =
         [ "<h3> Titulo </h3>", <h3> Titulo </h3> ],
         [ "<h2> Titulo </h2>", <h2> Titulo </h2> ],
         [ "<h1> Titulo </h1>", <h1> Titulo </h1> ],
-        [ "<strong> Importante </strong>", <strong> Importante </strong> ],
+        [ "<p> saltos <br/> de línea </p>", <p> saltos <br/> de línea </p> ],
       ],
-
       [
         [ <p> Html </p>, <p> Español </p> ],
         [ <p> Listas </p> ],
         [ <b> Codigo </b>, <b> Aparencia </b> ],
       ],
-
     ],
 
     [
-
       [
         [ <p> Css </p>, <p> Español </p> ],
         [ <p> Basico </p> ],
         [ <b> Codigo </b>, <b> Aparencia </b> ],
       ],
-
       [
         [ <p> Css </p>, <p> Español </p> ],
         [ <p> Texto </p> ],
         [ <b> Codigo </b>, <b> Aparencia </b> ],
       ],
+    ],
 
+    [
+      [
+        [ <p> JavaScript </p>, <p> Español </p> ],
+        [<p> Basico </p> ],
+        [ <b> Codigo </b>, <b> Aparencia </b> ],
+      ],
+      [
+        [ <p> JavaScript </p>, <p> Español </p> ],
+        [<p> 2 </p> ],
+        [ <b> Codigo </b>, <b> Aparencia </b> ],
+      ],
     ],
 
   ],

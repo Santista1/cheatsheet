@@ -1,5 +1,4 @@
 <head>
-
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -7,25 +6,48 @@
 <script src="https://cdn.jsdelivr.net/npm/html-2-jsx@0.5.1-dev/src/browser.min.js"></script>
 
 <style>
-  h6, h5, h4, h3, h2, h1, p {margin: 0px}
+  h6, h5, h4, h3, h2, h1, p {margin: 0px; text-align: center}
+  body {margin: 30px}
   .button {font-size: 30px;}
   .caja { display: flex; flex-direction: row; margin: 0px 100px 0px 100px; justify-content: center; }
   .cajita {  display: flex; width: 100%; justify-content: center; align-items: center; border: 1px solid; margin: 5px; padding: 20px; font-size: 30px; }
+
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px red;
+    border-radius: 10px;
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #F8CBA6;
+    box-shadow: inset 0 0 5px black;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b09076;
+  }
 </style>
 
-<script src="./data.js" type="text/babel" ></script>
+<script type="text/babel" src="data.js"></script>
 <script type="text/babel">
 
 function App() {
 
-  let color = ["#F8CBA6", "#add8e6"]
+  let color = ["#F8CBA6", "#add8e6", "F1EB9C"];
 
   const [language, setLanguage] = React.useState(0);
   const [subject, setSubject] = React.useState(0);
   const [category, setCategory] = React.useState(0);
 
 
-  const [first, second, ...rest] = data.at(language % data.length).at(subject % data[language % data.length].length).at(category % data[language % data.length][subject % data.length].length);
+  const [first, second, ...rest] = data.at(language % data.length)
+  .at(subject % (data.at(language % data.length).length))
+  .at(category % (data.at(language % data.length).at(subject % (data.at(language % data.length).length)).length));
 
   return (
 
@@ -56,6 +78,7 @@ function App() {
           {item}
         </div> })}
       </div> )})}
+
     </>
 
   )
